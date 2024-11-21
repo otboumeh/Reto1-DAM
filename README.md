@@ -11,7 +11,7 @@ Additionally, there is a **website** that supports the vending machine system, p
 
 ---
 
-## Customer Interaction Application (Terminal)
+## Customer Interaction Application (WindowBuilder)
 
 The customer interaction application will run in the terminal and consists of several phases:
 
