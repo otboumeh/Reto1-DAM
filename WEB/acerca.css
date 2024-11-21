@@ -1,0 +1,140 @@
+.about a::before{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #222629;
+    position: absolute;
+    bottom: -4px;
+}
+
+main{
+    padding-top: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+main h2{
+    width: 100%;
+    text-align:center ;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 2vw;
+    margin: 50px 0px;
+}
+
+main h3{
+    width: 100%;
+    text-align:left ;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 1.5vw;
+}
+
+main .contents{
+    position: relative;
+    left: 10%;
+    width: 60%;
+}
+
+main .contents p{
+    text-align: justify;
+    line-height: 25px;
+}
+
+.subcontent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    gap: 1%;
+}
+
+.subcontent div{
+    width: 49%;
+    height: 500px;
+    object-fit: cover;    
+}
+
+.subcontent div img{
+    width: 100%;
+    height: 100%;
+}
+
+main aside{
+    position: relative;
+    right: 10%;
+    width: 15%;
+    top: 3vw;
+    border-left: 1px solid #222629;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3vw;
+}
+
+aside ul{
+    font-size: 1vw;
+    padding-left: 3vw;
+    text-wrap: nowrap;
+}
+
+.stores{
+    width: 123%;
+    display: flex;
+    flex-direction: column;
+}
+
+.store{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vw 3vw;
+    border-radius: 10px;
+    border: 1px solid rgb(49, 112, 142, 50%);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    margin-bottom: 50px;
+    gap: 2vw;
+}
+
+.storeInfo{
+    font-size: 1.1vw;
+    height: fit-content;
+}
+
+.storeInfo h3{
+    color: #31708E;
+}
+
+.storeInfo i{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    color: #8FC1E3;
+}
+
+.storeMap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .about a::before{
+        width: 0px;
+    }
+
+    iframe{
+        width: 40vw;
+    }
+
+    aside ul{
+        font-size: 1.2vw;
+        padding-left: 3vw;
+        text-wrap: nowrap;
+    }
+}

@@ -1,0 +1,382 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: fit-content;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+header{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 300;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color:#fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: fixed;
+    z-index: 10000;
+}
+
+header .logo{
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5vw;
+    align-items: center;
+}
+
+.logo a{ 
+    text-decoration: none;
+    color: #222629;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo a img{
+    width: 22vw;
+}
+
+#menuCheckBox{
+    display: none;
+}
+
+header nav{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav ul{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    gap: 5px;
+}
+
+header nav ul li{
+    text-align: center;
+    display: inline-block;
+    width: 200px;
+}
+
+header nav ul li a{
+    font-size: 1.1vw;
+    text-decoration: none;
+    color: #222629;
+    position: relative;
+    text-transform: uppercase;
+}
+
+header nav ul li a::before{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: #222629;
+    position: absolute;
+    bottom: -4px;
+    transition: 0.5s ease;
+}
+
+header nav ul li a:hover::before{
+    width: 100%;
+}
+
+main{
+    position: relative;
+    top: 5rem;
+    height: fit-content;
+}
+
+.burgerMenu{
+    display: none;
+}
+
+footer{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #222629;
+    position: relative;
+    bottom: 0px;
+    z-index: 0;
+    margin-top: 250px;
+}
+
+.footerMain{
+    display: flex;
+    width: 70%;
+    height: 70%;
+    align-self: center;
+    z-index: 2;
+}
+
+.footerMain .logo-red{
+    width: 33.3%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footerMain .logo-red img{
+    width: 60%;
+    filter: drop-shadow(0px 5px 10px black);
+    opacity: 50%;  
+}
+
+.footerMain .logo-red .redSocial{
+     width: fit-content;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 4.2vw;
+     
+}
+
+.redSocial i{
+    color: rgb(217, 218, 220, 60%);
+    font-size: 2vw;
+}
+
+.redSocial i:hover{
+    color: #fff;
+    transform: rotate(10deg);
+    cursor: pointer;
+}
+
+
+.footerMain .nav{
+    font-size: 1.1vw;
+    letter-spacing: 2px;
+    width: 33.3%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav ul{
+    padding: 0%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: rgb(217, 218, 220, 50%);
+
+}
+.nav ul li a:hover{
+    color: white;
+}
+
+
+.footerMain .address{
+    height: 100%;
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+    justify-content: center;
+    gap: 10px;
+
+}
+.address .add{
+    color: #d9dadc;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.address .cell{
+    color: #d9dadc;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.address p{
+    font-size: 1.1vw;
+    height: fit-content;
+    width: 70%;
+    display: flex;
+    position: relative;
+    right: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+footer .copyright{
+    position: absolute;
+    align-self: center;
+    width: 70%;
+    overflow: hidden;
+    bottom: 40px;
+    text-align: center;
+    font-size: 11px;
+    color: #d9dadc;
+}
+
+.copyright hr{
+    height: 1px;
+    background-color: gray;
+    border: none;
+    margin-bottom: 20px;
+} 
+
+p{
+    font-family: "Arima", system-ui;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    
+    .logo a img{
+        width: 35vw;
+    }
+    
+    header nav{
+        width: 40%;
+        display: flex;
+    }
+
+    .burgerMenuContainer{
+        width: 35px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        cursor: pointer;
+        position: relative;
+        right: -50px;
+    }
+
+    .burgerMenu{
+        display: block;
+        width: 35px;
+        height: 4px;
+        background-color: #222629;
+        position: relative;
+        border-radius: 2px;
+        right: 0px;
+        transition: 0.3s ease-in-out;
+    }
+
+    #menuCheckBox{
+        display: none;
+    }
+
+    .burgerMenu::before{
+        content: "";
+        position: absolute;
+        width: 35px;
+        height: 4px;
+        background-color: #222629;
+        right: 0px;
+        top: 10px;
+        border-radius: 2px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .burgerMenu::after{
+        content: "";
+        position: absolute;
+        width: 35px;
+        height: 4px;
+        background-color: #222629;
+        right: 0px;
+        bottom: 10px;
+        border-radius: 2px;
+        transition: 0.3s ease-in-out;
+    }
+
+    header nav ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 5.5rem;
+        left: 0px;
+        padding: 0px;
+        margin: 0px;
+        gap: 0px;
+        height: 250px;
+        transform: translate(110%);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    header nav ul li{
+        text-align: center;
+        display: inline-block;
+        font-size: 5vw;
+        padding: 1vw 0px;
+        width: 100vw;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #222629;
+        margin: 0px;
+        position: relative;
+    }
+
+    header nav ul li:hover{
+        background-image: linear-gradient(to left, transparent, rgba(180, 179, 179, 0.2),transparent);
+    }
+    
+    header nav ul li a{
+        font-size: 15px;
+        text-decoration: none;
+        color: #fff;
+        position: relative;
+    }
+
+    header nav ul li a:hover::before{
+        width: 0%;
+    }
+
+    #menuCheckBox:checked ~ .burgerMenuContainer .burgerMenu {
+        width: 0px;
+    }
+
+    #menuCheckBox:checked ~ .burgerMenuContainer .burgerMenu::before {
+        rotate: 45deg;
+        transform: translate(-5px, -9px);
+    }
+
+    #menuCheckBox:checked ~ .burgerMenuContainer .burgerMenu::after {
+        rotate: -45deg;
+        transform: translate(-5px, 9px);
+    }
+
+
+    #menuCheckBox:checked ~ ul{
+        transform: translate(0%);
+    }
+
+
+  }

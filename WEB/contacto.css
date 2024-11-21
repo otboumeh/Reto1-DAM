@@ -1,0 +1,161 @@
+.contact a::before{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #222629;
+    position: absolute;
+    bottom: -4px;
+}
+h2{
+    width: 100%;
+    text-align:center ;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 2vw;
+    margin: 50px 0px;
+}
+
+
+main{
+    position: relative;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    height: fit-content;
+    flex: 1;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vw;
+}
+
+.form{
+    width: 75%;
+    height: 40vw;
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgb(255, 255, 255, 20%);
+    border-bottom: 1px solid rgb(255, 255, 255, 20%);
+    display: flex;
+    justify-content: center;
+    margin: 0vw 02vw 0vw 0vw;
+}
+.form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form form .inputs{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70%;
+    gap: 10%;
+    justify-content: center;
+}
+
+.form form .left{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+.form form .left input, .right input{
+    width: 80%;
+    padding: 0 2vw;
+    height: 4vw;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.2vw;
+    font-weight: 400;
+    border: none;
+    background-color: transparent;
+    border-bottom: 0.1vw solid rgb(255, 255, 255, 60%);
+    background-color: #d9dadc;
+}
+
+.sex{
+    width: 92%;
+    align-self: first baseline;
+    padding: 0.3vw 1vw;
+    height: 4vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1vw;
+}
+.sex label , .sex h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    height: 100%;
+}
+
+#male, #female, #other{
+    width: 1vw;
+    height: 1vw;
+}
+
+.form form .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    gap: 1.5vw;
+    position: relative;
+    top: 0px;
+}
+
+
+.form form .right textarea{
+    font-size: 1.5vw;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.2vw;
+    font-weight: 100;
+    width: 81%;
+    padding: 1vw 2vw;
+    height: 8vw;
+    border: none;
+    border-bottom: 0.1vw solid rgb(255, 255, 255, 60%);
+    background-color: #d9dadc;
+    resize: none;
+}
+
+
+.form form .buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    width: 100%;
+    height: 20%;
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+}
+
+.form form .buttons button{
+    height: 3vw ;
+    width: 12vw;
+    cursor: pointer;
+}
+
+.maps{
+    width: 75%;
+}
+
+main iframe{
+    width: 100%;
+    height: 400px
+}
+
+@media only screen and (max-width: 768px) {
+    .contact a::before{
+        width: 0px;
+    }
+}

@@ -1,0 +1,239 @@
+main{
+    top: 1rem;
+}
+
+.products a::before{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #222629;
+    position: absolute;
+    bottom: -4px;
+}
+
+h2{
+    width: 100%;
+    text-align:center ;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 2.5vw;
+    margin: 50px 0px;
+}
+
+main{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productsTypes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 200vw;
+}
+
+.type{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3vw;
+}
+
+.productsSection{
+    position: relative;
+    width: 85%;
+    height: 37vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.product{
+    position: relative;
+    width: 28%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.productImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.moreInfo{
+    display: flex;
+    flex-direction: column;
+    height: 15%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.moreInfo h3{
+    display: flex;
+    color: #222629;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 2%;
+}
+
+.moreInfo p{
+    height: 0%;
+    display: none;
+}
+
+.ProductDescription{
+    position: absolute;
+    width: 62%;
+    height: 35vw;
+    left: 3vw;
+    opacity: 0%;
+    z-index: -111;
+    border-radius: 10px;
+    transition-delay: 0.3s;
+    transition: 0.3s ease;
+    font-family: "Libre Baskerville", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1vw 0px;
+}
+
+.ProductDescription h1{
+    font-size: 2.5vw;
+    color: #31708E;
+    margin: 0px;
+}
+
+.ProductDescription p{
+    font-size: 1.5vw;   
+    font-family: "Arima", system-ui;
+    text-align: justify;
+    width: 90%;
+}
+
+.ProductDescription .icons{
+    display: flex;
+    width: 100%;
+    height: 45%;
+    position: relative;
+    bottom: 0vw;
+}
+
+.icons .column{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    grid-gap: 10px;
+    position: relative;
+    bottom: 0px;
+}
+.icons .column div{
+    display: flex;
+    flex-direction: row;
+
+}
+.column div span{
+    font-size: 1.3vw;   
+    font-family: "Arima", system-ui;
+}
+
+.column div i{
+    font-size: 1.5vw;  
+    width: 1vw;
+    height: 1vw;
+    margin-right:2vw ; 
+    color: #8FC1E3;
+}
+
+.checkProduct1, .checkProduct2, .checkProduct3{
+    display: none;
+}
+
+.checkProduct1:checked ~ .product1{
+    transform: translateX(227.5%) ;
+    z-index: 111;
+}
+
+.checkProduct1:checked ~ .product2 {
+    transform: translatex(113.5%);
+    z-index: 11;
+    opacity: 0%;
+    box-shadow: none;
+}
+
+.checkProduct1:checked ~ .product3 {
+    box-shadow: none;
+    opacity: 0%;
+}
+
+.checkProduct1:checked ~ .ProductDescription1 {
+    opacity: 100%;
+}
+
+
+ .checkProduct2:checked ~ .product1{
+    transform: translateX(227.5%) ;
+    z-index: 1;
+    opacity: 0%;
+    box-shadow: none;
+}
+
+.checkProduct2:checked ~ .product2 {
+    transform: translatex(113.5%);
+    z-index: 11;
+}
+.checkProduct2:checked ~ .product3 {
+    box-shadow: none;
+    opacity: 0%;
+}
+
+.checkProduct2:checked ~ .ProductDescription2 {
+    opacity: 100%;
+}
+
+.checkProduct3:checked ~ .product1{
+    transform: translateX(227.5%) ;
+    z-index: 1;
+    opacity: 0%;
+}
+
+.checkProduct3:checked ~ .product2 {
+    transform: translatex(113.5%);
+    z-index: 11;
+    opacity: 0%;
+}
+.checkProduct3:checked ~ .product3 {
+    z-index: 111;
+}
+.checkProduct3:checked ~ .ProductDescription3 {
+    opacity: 100%;
+}
+
+footer{
+    margin-top: 31vh;
+}
+
+@media only screen and (max-width: 768px) {
+    .products a::before{
+        width: 0px;
+    }
+}

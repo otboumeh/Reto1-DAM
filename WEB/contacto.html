@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contáctanos en Elorrieta Vending. Aquí encontrarás nuestra dirección, teléfono, y horarios de atención." />
+    <meta name="keywords" content="contacto Elorrieta Vending, dirección Elorrieta Vending, teléfono Elorrieta Vending, atención al cliente" />
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./contacto.css" />
+
+    <title>Contacto</title>
+
+    <script
+      src="https://kit.fontawesome.com/38b1724369.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./assets/img/logo.png" alt="Elorrieta Vending logo" />
+        </a>
+      </div>
+      <nav>
+        <input type="checkbox" id="menuCheckBox">
+        <label class="burgerMenuContainer" for="menuCheckBox">
+          <span class="burgerMenu"></span>
+        </label>
+        <ul>
+          <li class="home"><a href="./index.html">Inicio</a></li>
+          <li class="about"><a href="./acerca.html">Acerca</a></li>
+          <li class="products"><a href="./productos.html">Productos</a></li>
+          <li class="contact"><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>formulario de contacto</h2>
+      <div class="form">
+        <form action="./formSent.html" method="get">
+          <div class="inputs">
+            <div class="left">
+              <input
+                class="name"
+                name="name"
+                type="text"
+                placeholder="Nombre *"
+                required
+              />
+
+              <div class="sex">
+                <h3>sexo:</h3>  
+                <label for="male"><input type="radio" id="male" name="sexo" value="male"> Hombre</label>
+                <label for="female"><input type="radio" id="female" name="sexo" value="female"> Mujer</label>
+                <label for="other"><input type="radio" id="other" name="sexo" value="one"> Otro </label>
+              </div>
+
+              <input
+                class="email"
+                name="email"
+                type="email"
+                placeholder="Email *"
+                required
+              />
+
+              <input
+                class="phone"
+                name="phone"
+                type="text"
+                placeholder="Telefono (Opcional)"
+              />
+            </div>
+            <div class="right">
+              <input
+                class="lastName"
+                name="lastName"
+                type="text"
+                placeholder="Apellidos *"
+                required
+              />
+
+              <input class="age" 
+              name="age" type="number" 
+              placeholder="Edad *" 
+              />
+
+              <textarea
+                class="text"
+                name="text"
+                placeholder="Tu Mensaje *"
+                required
+              ></textarea>
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="resetb" type="reset">RESETEAR</button>
+            <button class="submitb" type="submit">ENVIAR</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="maps">
+        <h2>Nuestra Ubicacion Principal</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2904.454758930231!2d-2.9673868240182477!3d43.28379737112216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e507052ed4917%3A0xec69922dea02910b!2sCIFP%20Elorrieta%20Erreka%20Mari%20LHII!5e0!3m2!1ses!2ses!4v1729811620068!5m2!1ses!2ses"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footerMain">
+        <div class="logo-red">
+          <img src="./assets/img/logo white.png" alt="Elorrieta Vending in white" />
+          <div class="redSocial">
+            <a
+              href="https://www.facebook.com/people/CIFP-Elorrieta-Erreka-Mari-LHII/100072170480219/"
+              target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="https://x.com/cifp_eem_lhii?s=11" target="_blank"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/elorrieta_erreka_mari/"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="nav">
+          <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./acerca.html">Acerca</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="address">
+          <div class="add">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Lehendakari Agirre 184, San Ignazio, 48015 (Bilbao)</p>
+          </div>
+          <div class="cell">
+            <i class="fa-solid fa-phone"></i>
+            <p>( +34 ) 944 028 000</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <hr />
+        <p>&#169; Elorrieta Vending 2024 - Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>

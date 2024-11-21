@@ -1,0 +1,210 @@
+.home a::before{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #222629;
+    position: absolute;
+    bottom: -4px;
+}
+
+.slideshow{
+    width: 100%;
+    height: 42vw;
+    margin-bottom: 100px;
+    overflow: hidden;
+    position: relative;
+}
+.slides{
+    width: 400%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    animation: slider 20s infinite linear;
+}
+
+@keyframes slider {
+    0% {
+        transform: translateX(0);
+    }
+    23% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-25%);
+    }
+    48% {
+        transform: translateX(-25%);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    73% {
+        transform: translateX(-50%);
+    }
+    75% {
+        transform: translateX(-75%);
+    }
+    98% {
+        transform: translateX(-75%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.slide{
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide1{
+    background-image: url(./assets/img/slide1.jpg);
+}
+.slide2{
+    background-image: url(./assets/img/slide2.jpg);
+}
+.slide3{
+    background-image: url(./assets/img/slide3.jpg);
+}
+.slide4{
+    background-image: url(./assets/img/slide4.jpg);
+}
+
+.slide h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3.5vw;
+    color: white;
+    text-shadow: 0px 5px 10px black;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.slide1 h1{
+    top: 30%;
+}
+.slide2 h1{
+    top: 10%;
+}
+.slide3 h1{
+    top: -15%;
+}
+.slide4 h1{
+    width: 100%;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgb(255, 255, 255, 40%) ;
+    border-bottom: 1px solid rgb(255, 255, 255, 40%) ;
+    padding: 20px 0px;
+}
+
+.logoOnMachine{
+    position: absolute;
+    width: 70%;
+    padding-right: 1%;
+    text-align: center;
+    width: 200px;
+    bottom: 8%;
+    z-index: 10000;
+}
+
+
+.intro{
+    height: fit-content;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+h2{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 2vw;
+}
+.intro p{
+    width: 75%;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 35px;
+}
+
+
+.productsSection{
+    width: 100%;
+    height: 45vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.productsSection .productTypes{
+    width: 85%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.productTypes .type{
+    position: relative;
+    width: 23%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    display: flex;
+}
+
+.productsSection .productImg{
+    align-self: flex-start;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;    
+    border: 1px solid rgb(0, 0, 0,30%);
+}
+
+.productImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.moreInfo{
+    display: flex;
+    flex-direction: column;
+    height: 15%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.moreInfo h3{
+    display: flex;
+    color: #222629;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 2%;
+    font-size: 2vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .home a::before{
+        width: 0px;
+    }
+}
