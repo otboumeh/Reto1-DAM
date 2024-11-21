@@ -4,7 +4,7 @@
 
 The **Elorrieta Vending Machine System** is a project developed during my **Grado Superior de DAM** at **Elorrieta**. It is composed of two distinct parts:
 
-1. **Customer Interaction Application (Terminal)**: This part allows customers to interact with the vending machine to purchase products.
+1. **Customer Interaction Application (WindowBuilder)**: This part allows customers to interact with the vending machine to purchase products.
 2. **Administrative Management Application**: This part is for employees to manage the products in the vending machine, including adding, editing, and deleting products.
 
 Additionally, there is a **website** that supports the vending machine system, providing a user-friendly interface for products and information.
